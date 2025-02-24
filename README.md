@@ -11,4 +11,4 @@
 <p>
 </body>
 </html>
-<a href="https://lib.ub.ac.id/>perpustakaan brawijaya</a>
+<a href="https://lib.ub.ac.id/">perpustakaan brawijaya</a>
