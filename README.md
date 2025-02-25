@@ -14,10 +14,10 @@
 <h4>Halaman lain</h4>
     <ul>
         <li>
-            <a href="about.html">About Me</a>
+            <a href="Aboutme.html">About Me</a>
         </li>
         <li>
-            <a href="contact-us.html">Contact Us</a>
+            <a href="Contactus.html">Contact Us</a>
         </li>
     </ul>
 </body>
