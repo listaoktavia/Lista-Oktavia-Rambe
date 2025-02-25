@@ -6,7 +6,7 @@
 <h1>Perpustakaan Lista Oktavia</h1>
 <h2>hai, welcome</h2>
 <p>Perkenalkan nama saya Lista, ini adalah perpustakaan pribadi yang berisi beberapa koleksi yang saya punya, seperti ebook, makalah, tugas kuliah, dan tulisan tangan saya.
-<h3>Kerjasama 
+<h3>Kerjasama<h3> 
 <p>
 </body>
 </html>
