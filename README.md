@@ -10,7 +10,7 @@
 <p>
 </body>
 </html>
-<a href="https://lib.ub.ac.id/">perpustakaan brawijaya</a>
+<a href="https://lib.ub.ac.id/">Perpustakaan Brawijaya</a>
 <h4>Halaman lain</h4>
     <ul>
         <li>
