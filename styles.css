@@ -13,6 +13,27 @@ body {
     line-height: 1.6;
 }
 
+/* Membuat tabel lebih rapi dan berada di tengah */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Styling tabel agar rapi */
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
 /* Container */
 .container {
     width: 80%;
