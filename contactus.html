@@ -4,126 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perpustakaan Digital Lista Oktavia</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #E0F7F7;
-            margin: 0;
-            padding: 0;
-		text-align: center;
-        }
-	container {
-            width: 50%;
-            margin: 50px auto;
-            background: #bbdefb;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #0277bd;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #81d4fa;
-            color: white;
-        }
-
-        header {
-            background-color: #20B2AA;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-            background-color: #2AA198;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            padding: 15px 20px;
-            display: inline-block;
-        }
-        nav ul li a:hover {
-            background-color: #00796B;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-            background-color: white;
-            color: #333;
-        }
-        footer {
-            background-color: #20B2AA;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
- 
-    </head>
-<body>
-    <header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-center">
+    <header class="bg-info text-white py-4">
         <h1>Perpustakaan Digital Lista</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+            <ul class="nav justify-content-center bg-primary p-2">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="aboutme.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contactus.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-
-</head>
-<body>
-
-    <h1>Contact Us</h1>
-	
-	<p>Butuh bantuan dari saya? Kirimi saya beberapa pesan dengan mengisi form dibawah ini.</p>
-	
-    <form>
-        <label for="name">Nama:</label><br>
-        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required><br><br>
-
-        <label for="message">Pesan:</label><br>
-        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda" required></textarea><br><br>
-	    <tr>
-                    <td colspan="2" style="text-align: center">
-        <button type="submit">Kirim</button>
-    </form>
-
+    
+    <div class="container mt-4">
+        <h1>Contact Us</h1>
+        <p>Butuh bantuan dari saya? Kirimi saya beberapa pesan dengan mengisi form di bawah ini.</p>
+        <form class="bg-white p-4 rounded shadow">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan email Anda" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Pesan:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tulis pesan Anda" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
     </div>
-
-<br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP_UDnBTm9ucWSBBGKU8PS2XSf7JU0-pXMcwa_P-dF7oc-IWsfwWdRbKfqRyl8BLQ5AKqrO1TGxa-HhwvXz8gqJUyOIidWGd4vLaOB69C_WU82m7SXqbVuvLjKCaozQQie02j6d8F4SPm/s1600/gift+10.gif" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP_UDnBTm9ucWSBBGKU8PS2XSf7JU0-pXMcwa_P-dF7oc-IWsfwWdRbKfqRyl8BLQ5AKqrO1TGxa-HhwvXz8gqJUyOIidWGd4vLaOB69C_WU82m7SXqbVuvLjKCaozQQie02j6d8F4SPm/s1600/gift+10.gif" /></a></div>
-
-     <footer class="#20B2AA; text-white text-center p-4 mt-6">
+    
+    <div class="text-center my-4">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP_UDnBTm9ucWSBBGKU8PS2XSf7JU0-pXMcwa_P-dF7oc-IWsfwWdRbKfqRyl8BLQ5AKqrO1TGxa-HhwvXz8gqJUyOIidWGd4vLaOB69C_WU82m7SXqbVuvLjKCaozQQie02j6d8F4SPm/s1600/gift+10.gif" class="img-fluid" alt="Gift">
+    </div>
+    
+    <footer class="bg-info text-white text-center py-3 mt-4">
         <p>&copy; 2025 Lista Oktavia Rambe. All Rights Reserved.</p>
-    </footer> 
-
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
