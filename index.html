@@ -4,102 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perpustakaan Digital Lista Oktavia</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-   <script>
-       alert("Welcome to Perpustakaan Lista Oktavia")
+<body class="bg-light">
+    <script>
+        alert("Welcome to Perpustakaan Lista Oktavia");
     </script>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #E0F7F7;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #20B2AA;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-            background-color: #2AA198;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            padding: 15px 20px;
-            display: inline-block;
-        }
-        nav ul li a:hover {
-            background-color: #00796B;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-            background-color: white;
-            color: #333;
-        }
-        footer {
-            background-color: #20B2AA;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
- 
-    </head>
-<body>
-    <header>
+    
+    <header class="bg-info text-white text-center py-3">
         <h1>Perpustakaan Digital Lista</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
     </header>
 
-     <section id="home" class="p-6 text-center">
-        <h2 class="text-2xl font-bold">Selamat Datang di Perpustakaan Digital Lista Oktavia</h2>
-    </section>
-
-    <section id="about" class="p-6 bg-white text-center">
-        <h2 class="text-2xl font-bold">Tentang Saya</h2>
-        <p class="mt-2">Perkenalkan nama saya Lista Oktavia, yang merupakan mahasiswa dari Universitas Sumatera Utara, jurusan program studi Perpustakaan dan Sains Informasi, ini adalah perpustakaan pribadi untuk menemukan berbagai koleksi buku digital. </p>
-    </section>
-        
-    <section id="contact" class="p-6 text-center">
-        <h2 class="text-2xl font-bold">Kerja Sama</h2>
-         <ul>
-             <a href="https://lib.ub.ac.id/" target="_blank">Perpustakaan Brawijaya</a>
-         </ul>
-    </section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
-<br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP_UDnBTm9ucWSBBGKU8PS2XSf7JU0-pXMcwa_P-dF7oc-IWsfwWdRbKfqRyl8BLQ5AKqrO1TGxa-HhwvXz8gqJUyOIidWGd4vLaOB69C_WU82m7SXqbVuvLjKCaozQQie02j6d8F4SPm/s1600/gift+10.gif" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP_UDnBTm9ucWSBBGKU8PS2XSf7JU0-pXMcwa_P-dF7oc-IWsfwWdRbKfqRyl8BLQ5AKqrO1TGxa-HhwvXz8gqJUyOIidWGd4vLaOB69C_WU82m7SXqbVuvLjKCaozQQie02j6d8F4SPm/s1600/gift+10.gif" /></a></div>
+    <div class="container mt-4">
+        <section id="home" class="text-center py-4 bg-white rounded shadow-sm">
+            <h2 class="text-primary">Selamat Datang di Perpustakaan Digital Lista Oktavia</h2>
+        </section>
 
-     <footer class="#20B2AA; text-white text-center p-4 mt-6">
+        <section id="about" class="text-center py-4 bg-white rounded shadow-sm mt-3">
+            <h2 class="text-primary">Tentang Saya</h2>
+            <p>Perkenalkan nama saya Lista Oktavia, mahasiswa Universitas Sumatera Utara jurusan Perpustakaan dan Sains Informasi. Ini adalah perpustakaan pribadi untuk menemukan berbagai koleksi buku digital.</p>
+        </section>
+
+        <section id="contact" class="text-center py-4 bg-white rounded shadow-sm mt-3">
+            <h2 class="text-primary">Kerja Sama</h2>
+            <a href="https://lib.ub.ac.id/" class="btn btn-info" target="_blank">Perpustakaan Brawijaya</a>
+        </section>
+    </div>
+    
+    <div class="text-center mt-4">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP_UDnBTm9ucWSBBGKU8PS2XSf7JU0-pXMcwa_P-dF7oc-IWsfwWdRbKfqRyl8BLQ5AKqrO1TGxa-HhwvXz8gqJUyOIidWGd4vLaOB69C_WU82m7SXqbVuvLjKCaozQQie02j6d8F4SPm/s1600/gift+10.gif" class="img-fluid" alt="Library Image">
+    </div>
+    
+    <footer class="bg-info text-white text-center py-3 mt-4">
         <p>&copy; 2025 Lista Oktavia Rambe. All Rights Reserved.</p>
-    </footer> 
-
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
