@@ -1,118 +1,116 @@
-<!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Digital - Koleksi Novel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body class="bg-light">
-
-    <header class="bg-primary text-white text-center py-4">
-        <h1>Perpustakaan Digital Koleksi Novel</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="contactus.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="container my-5">
-        <h2 class="text-center mb-4">Koleksi Novel Bahasa Indonesia</h2>
-
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Book 1 -->
-            <div class="col">
-                <div class="card">
-                    <img src="img/pelarian.jpg" class="card-img-top" alt="Pelarian">
-                    <div class="card-body">
-                        <h5 class="card-title">Pelarian</h5>
-                        <a href="pdf/pelarian.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 2 -->
-            <div class="col">
-                <div class="card">
-                    <img src="img/cintapuccino.jpg" class="card-img-top" alt="Cintapuccino">
-                    <div class="card-body">
-                        <h5 class="card-title">Cintapuccino</h5>
-                        <a href="pdf/cintapuccino.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 3 -->
-            <div class="col">
-                <div class="card">
-                    <img src="img/edensor.jpg" class="card-img-top" alt="Edensor">
-                    <div class="card-body">
-                        <h5 class="card-title">Edensor</h5>
-                        <a href="pdf/edensor.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 4 -->
-            <div class="col">
-                <div class="card">
-                    <img src="img/karena_cinta.jpg" class="card-img-top" alt="Karena Cinta">
-                    <div class="card-body">
-                        <h5 class="card-title">Karena Cinta</h5>
-                        <a href="pdf/karena_cinta.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 5 -->
-            <div class="col">
-                <div class="card">
-                    <img src="img/mawar_merah_darah.jpg" class="card-img-top" alt="Mawar Merah Darah">
-                    <div class="card-body">
-                        <h5 class="card-title">Mawar Merah Darah</h5>
-                        <a href="pdf/mawar_merah_darah.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 6 -->
-            <div class="col">
-                <div class="card">
-                    <img src="img/kamu_berharga_seperti_kata.jpg" class="card-img-top" alt="Kamu Berharga Seperti Kata">
-                    <div class="card-body">
-                        <h5 class="card-title">Kamu Berharga Seperti Kata</h5>
-                        <a href="pdf/kamu_berharga_seperti_kata.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 7 -->
-            <div class="col">
-                <div class="card">
-                    <img src="img/animal_farm.jpg" class="card-img-top" alt="Animal Farm">
-                    <div class="card-body">
-                        <h5 class="card-title">Animal Farm</h5>
-                        <a href="pdf/animal_farm.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="bg-primary text-white text-center py-3 mt-4">
-        <p>&copy; 2025 Lista Oktavia Rambe. All Rights Reserved.</p>
-    </footer>
-
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Koleksi Novel Klasik
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col items-center p-4">
+  <h1 class="text-4xl font-bold text-gray-900 mb-8 mt-6 text-center">
+   Koleksi Novel Klasik
+  </h1>
+  <div class="book-collection grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl w-full">
+   <div class="book-card bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+    <img alt="Cover of the classic novel Pride and Prejudice showing a vintage Victorian style illustration of a woman in a garden" class="w-full h-80 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/0c3bc0a2-6d12-4bf7-056c-7cff551d6d67.jpg" width="400"/>
+    <div class="p-4 flex flex-col flex-grow">
+     <h3 class="text-xl font-semibold text-gray-800 mb-4">
+      Pride and Prejudice
+     </h3>
+     <a class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded text-center transition-colors duration-200" href="pdf/pride-and-prejudice.pdf" target="_blank">
+      <i class="fas fa-file-pdf mr-2">
+      </i>
+      Baca PDF
+     </a>
+    </div>
+   </div>
+   <div class="book-card bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+    <img alt="Cover of The Great Gatsby novel featuring an art deco style illustration with a city skyline and a mysterious face" class="w-full h-80 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/0404a727-5c26-45c2-3274-6d2085b1741b.jpg" width="400"/>
+    <div class="p-4 flex flex-col flex-grow">
+     <h3 class="text-xl font-semibold text-gray-800 mb-4">
+      The Great Gatsby
+     </h3>
+     <a class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded text-center transition-colors duration-200" href="pdf/the-great-gatsby.pdf" target="_blank">
+      <i class="fas fa-file-pdf mr-2">
+      </i>
+      Baca PDF
+     </a>
+    </div>
+   </div>
+   <div class="book-card bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+    <img alt="Cover of Dracula novel showing a dark gothic castle with a full moon and bats flying" class="w-full h-80 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/c5bba229-2e4a-4b1d-e6e7-5a3a3130bd46.jpg" width="400"/>
+    <div class="p-4 flex flex-col flex-grow">
+     <h3 class="text-xl font-semibold text-gray-800 mb-4">
+      Dracula
+     </h3>
+     <a class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded text-center transition-colors duration-200" href="pdf/dracula.pdf" target="_blank">
+      <i class="fas fa-file-pdf mr-2">
+      </i>
+      Baca PDF
+     </a>
+    </div>
+   </div>
+   <div class="book-card bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+    <img alt="Cover of Frankenstein novel featuring a vintage illustration of a scientist in a lab with lightning" class="w-full h-80 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/32f3891a-7914-4a2a-2482-969c149f317e.jpg" width="400"/>
+    <div class="p-4 flex flex-col flex-grow">
+     <h3 class="text-xl font-semibold text-gray-800 mb-4">
+      Frankenstein
+     </h3>
+     <a class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded text-center transition-colors duration-200" href="pdf/frankenstein.pdf" target="_blank">
+      <i class="fas fa-file-pdf mr-2">
+      </i>
+      Baca PDF
+     </a>
+    </div>
+   </div>
+   <div class="book-card bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+    <img alt="Cover of Moby-Dick novel showing a giant white whale attacking a wooden ship in stormy seas" class="w-full h-80 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/9a2e6fc7-2e13-41c5-584d-621eb0106295.jpg" width="400"/>
+    <div class="p-4 flex flex-col flex-grow">
+     <h3 class="text-xl font-semibold text-gray-800 mb-4">
+      Moby-Dick
+     </h3>
+     <a class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded text-center transition-colors duration-200" href="pdf/moby-dick.pdf" target="_blank">
+      <i class="fas fa-file-pdf mr-2">
+      </i>
+      Baca PDF
+     </a>
+    </div>
+   </div>
+   <div class="book-card bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+    <img alt="Cover of Jane Eyre novel featuring a moody Victorian era woman standing in front of a large manor house" class="w-full h-80 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/21a4fe41-1a48-449e-d24f-2b079ed4cb56.jpg" width="400"/>
+    <div class="p-4 flex flex-col flex-grow">
+     <h3 class="text-xl font-semibold text-gray-800 mb-4">
+      Jane Eyre
+     </h3>
+     <a class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded text-center transition-colors duration-200" href="pdf/jane-eyre.pdf" target="_blank">
+      <i class="fas fa-file-pdf mr-2">
+      </i>
+      Baca PDF
+     </a>
+    </div>
+   </div>
+   <div class="book-card bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+    <img alt="Cover of The Picture of Dorian Gray novel showing a mysterious portrait with a dark background and elegant frame" class="w-full h-80 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/f5551ddf-dafd-4b4a-aee1-251fbad15ab7.jpg" width="400"/>
+    <div class="p-4 flex flex-col flex-grow">
+     <h3 class="text-xl font-semibold text-gray-800 mb-4">
+      The Picture of Dorian Gray
+     </h3>
+     <a class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded text-center transition-colors duration-200" href="pdf/the-picture-of-dorian-gray.pdf" target="_blank">
+      <i class="fas fa-file-pdf mr-2">
+      </i>
+      Baca PDF
+     </a>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>
