@@ -1,183 +1,118 @@
+<!DOCTYPE html>
 <html lang="id">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   Koleksi Novel Bahasa Indonesia
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
- </head>
- <body class="bg-gray-100 min-h-screen flex flex-col">
-  <header class="py-8 px-4 sm:px-6 lg:px-8">
-   <h1 class="text-3xl sm:text-4xl font-semibold text-center text-gray-900">
-    Koleksi Novel Bahasa Indonesia
-   </h1>
-  </header>
-  <main class="flex-grow px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-    <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
-     <img alt="Cover novel Pelarian showing a dramatic abstract art with warm orange and red tones" class="w-full h-72 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ea348407-1dc7-4702-cfc1-bffba3625719.jpg" width="400"/>
-     <div class="p-4 flex flex-col flex-grow">
-      <h3 class="text-lg font-semibold text-gray-900 mb-3 text-center">
-       Pelarian
-      </h3>
-      <p class="text-gray-700 text-sm mb-4 flex-grow">
-       "Pelarian" mengisahkan perjalanan seorang pemuda yang melarikan diri dari masa lalunya yang kelam. Dalam pelariannya, ia menemukan arti persahabatan, cinta, dan keberanian untuk menghadapi kenyataan. Novel ini penuh dengan konflik emosional dan pemandangan alam yang memukau.
-      </p>
-      <button data-pdf="pdf/pelarian.pdf" class="open-pdf-btn mt-auto bg-blue-600 hover:bg-blue-700 text-white text-center rounded-md py-2 px-4 font-medium transition flex items-center justify-center gap-2">
-       <i class="fas fa-file-pdf"></i>
-       Baca PDF
-      </button>
-     </div>
-    </div>
-    <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
-     <img alt="Cover novel Cintapuccino featuring a romantic coffee cup illustration with soft pastel colors" class="w-full h-72 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/7d47e2c7-665b-4d23-29f9-eca075ef76c6.jpg" width="400"/>
-     <div class="p-4 flex flex-col flex-grow">
-      <h3 class="text-lg font-semibold text-gray-900 mb-3 text-center">
-       Cintapuccino
-      </h3>
-      <p class="text-gray-700 text-sm mb-4 flex-grow">
-       "Cintapuccino" adalah kisah romantis yang manis tentang dua insan yang bertemu di sebuah kedai kopi. Dengan latar suasana hangat dan aroma kopi yang menggoda, novel ini mengeksplorasi makna cinta, harapan, dan kebersamaan dalam kehidupan sehari-hari.
-      </p>
-      <button data-pdf="pdf/cintapuccino.pdf" class="open-pdf-btn mt-auto bg-blue-600 hover:bg-blue-700 text-white text-center rounded-md py-2 px-4 font-medium transition flex items-center justify-center gap-2">
-       <i class="fas fa-file-pdf"></i>
-       Baca PDF
-      </button>
-     </div>
-    </div>
-    <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
-     <img alt="Cover novel Edensor showing a scenic mountain landscape with cool blue and green hues" class="w-full h-72 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/539a44c9-87f6-4a70-1c0c-700b6bf10315.jpg" width="400"/>
-     <div class="p-4 flex flex-col flex-grow">
-      <h3 class="text-lg font-semibold text-gray-900 mb-3 text-center">
-       Edensor
-      </h3>
-      <p class="text-gray-700 text-sm mb-4 flex-grow">
-       "Edensor" membawa pembaca ke sebuah desa pegunungan yang indah, di mana seorang tokoh utama mencari jati diri dan kedamaian. Novel ini sarat dengan deskripsi alam yang memukau dan refleksi mendalam tentang kehidupan dan cinta.
-      </p>
-      <button data-pdf="pdf/edensor.pdf" class="open-pdf-btn mt-auto bg-blue-600 hover:bg-blue-700 text-white text-center rounded-md py-2 px-4 font-medium transition flex items-center justify-center gap-2">
-       <i class="fas fa-file-pdf"></i>
-       Baca PDF
-      </button>
-     </div>
-    </div>
-    <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
-     <img alt="Cover novel Karena Cinta with a soft romantic theme showing a couple holding hands in a sunset background" class="w-full h-72 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/75e026d0-a273-4bc8-bb42-021285e5ef5a.jpg" width="400"/>
-     <div class="p-4 flex flex-col flex-grow">
-      <h3 class="text-lg font-semibold text-gray-900 mb-3 text-center">
-       Karena Cinta
-      </h3>
-      <p class="text-gray-700 text-sm mb-4 flex-grow">
-       "Karena Cinta" adalah cerita tentang pengorbanan dan kekuatan cinta sejati. Melalui lika-liku kehidupan, tokoh utama belajar bahwa cinta mampu mengubah segalanya dan memberikan harapan di saat tersulit.
-      </p>
-      <button data-pdf="pdf/karena_cinta.pdf" class="open-pdf-btn mt-auto bg-blue-600 hover:bg-blue-700 text-white text-center rounded-md py-2 px-4 font-medium transition flex items-center justify-center gap-2">
-       <i class="fas fa-file-pdf"></i>
-       Baca PDF
-      </button>
-     </div>
-    </div>
-    <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
-     <img alt="Cover novel Mawar Merah Darah featuring a dark red rose with blood drops on black background" class="w-full h-72 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/0e8a9619-7527-4531-3f3e-33d4e3cc55a1.jpg" width="400"/>
-     <div class="p-4 flex flex-col flex-grow">
-      <h3 class="text-lg font-semibold text-gray-900 mb-3 text-center">
-       Mawar Merah Darah
-      </h3>
-      <p class="text-gray-700 text-sm mb-4 flex-grow">
-       "Mawar Merah Darah" adalah novel thriller yang penuh misteri dan ketegangan. Cerita berpusat pada sebuah rahasia kelam yang tersembunyi di balik keindahan mawar merah, mengungkap sisi gelap manusia dan dendam yang membara.
-      </p>
-      <button data-pdf="pdf/mawar_merah_darah.pdf" class="open-pdf-btn mt-auto bg-blue-600 hover:bg-blue-700 text-white text-center rounded-md py-2 px-4 font-medium transition flex items-center justify-center gap-2">
-       <i class="fas fa-file-pdf"></i>
-       Baca PDF
-      </button>
-     </div>
-    </div>
-    <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
-     <img alt="Cover novel Kamu Berharga Seperti Kata with a minimalist design showing handwritten words on a notebook page" class="w-full h-72 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/772f51be-1f2d-4703-480f-cd6988ed2eab.jpg" width="400"/>
-     <div class="p-4 flex flex-col flex-grow">
-      <h3 class="text-lg font-semibold text-gray-900 mb-3 text-center">
-       Kamu Berharga Seperti Kata
-      </h3>
-      <p class="text-gray-700 text-sm mb-4 flex-grow">
-       "Kamu Berharga Seperti Kata" adalah kumpulan puisi dan prosa pendek yang menyentuh hati. Setiap kata dalam buku ini dirangkai untuk mengingatkan pembaca akan nilai diri dan keindahan dalam kehidupan sehari-hari.
-      </p>
-      <button data-pdf="pdf/kamu_berharga_seperti_kata.pdf" class="open-pdf-btn mt-auto bg-blue-600 hover:bg-blue-700 text-white text-center rounded-md py-2 px-4 font-medium transition flex items-center justify-center gap-2">
-       <i class="fas fa-file-pdf"></i>
-       Baca PDF
-      </button>
-     </div>
-    </div>
-    <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
-     <img alt="Cover novel Animal Farm showing a stylized illustration of farm animals with a rustic color palette" class="w-full h-72 object-cover" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/7419f64b-9e6f-4b1b-7e81-d5eba8430fa2.jpg" width="400"/>
-     <div class="p-4 flex flex-col flex-grow">
-      <h3 class="text-lg font-semibold text-gray-900 mb-3 text-center">
-       Animal Farm
-      </h3>
-      <p class="text-gray-700 text-sm mb-4 flex-grow">
-       "Animal Farm" adalah novel satir klasik yang menggambarkan perjuangan hewan-hewan di sebuah peternakan melawan penindasan. Cerita ini menyampaikan pesan kuat tentang politik, kekuasaan, dan kebebasan.
-      </p>
-      <button data-pdf="pdf/animal_farm.pdf" class="open-pdf-btn mt-auto bg-blue-600 hover:bg-blue-700 text-white text-center rounded-md py-2 px-4 font-medium transition flex items-center justify-center gap-2">
-       <i class="fas fa-file-pdf"></i>
-       Baca PDF
-      </button>
-     </div>
-    </div>
-   </div>
-   <section id="pdf-viewer-section" class="fixed inset-0 bg-black bg-opacity-80 hidden flex flex-col">
-    <div class="flex justify-between items-center bg-gray-900 p-3">
-     <h2 class="text-white text-lg font-semibold" id="pdf-title">
-     </h2>
-     <button id="close-pdf" aria-label="Tutup PDF" class="text-white text-2xl hover:text-red-500 transition">
-      &times;
-     </button>
-    </div>
-    <div class="flex-grow overflow-auto">
-     <iframe id="pdf-frame" class="w-full h-full" src="" title="PDF Viewer" frameborder="0">
-     </iframe>
-    </div>
-   </section>
-  </main>
-  <footer class="py-6 text-center text-gray-600 text-sm">
-   © 2024 Koleksi Novel Bahasa Indonesia
-  </footer>
-  <script>
-   const openButtons = document.querySelectorAll('.open-pdf-btn');
-    const pdfSection = document.getElementById('pdf-viewer-section');
-    const pdfFrame = document.getElementById('pdf-frame');
-    const closeBtn = document.getElementById('close-pdf');
-    const pdfTitle = document.getElementById('pdf-title');
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital - Koleksi Novel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-light">
 
-    openButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const pdfUrl = button.getAttribute('data-pdf');
-        pdfFrame.src = pdfUrl;
-        // Set title from the book title in the card
-        const card = button.closest('.bg-white');
-        const title = card.querySelector('h3').textContent;
-        pdfTitle.textContent = title;
-        pdfSection.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-      });
-    });
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Perpustakaan Digital Koleksi Novel</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    closeBtn.addEventListener('click', () => {
-      pdfFrame.src = '';
-      pdfSection.classList.add('hidden');
-      document.body.style.overflow = '';
-    });
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Koleksi Novel Bahasa Indonesia</h2>
 
-    // Close PDF viewer on Escape key
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !pdfSection.classList.contains('hidden')) {
-        closeBtn.click();
-      }
-    });
-  </script>
- </body>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Book 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/pelarian.jpg" class="card-img-top" alt="Pelarian">
+                    <div class="card-body">
+                        <h5 class="card-title">Pelarian</h5>
+                        <a href="pdf/pelarian.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/cintapuccino.jpg" class="card-img-top" alt="Cintapuccino">
+                    <div class="card-body">
+                        <h5 class="card-title">Cintapuccino</h5>
+                        <a href="pdf/cintapuccino.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/edensor.jpg" class="card-img-top" alt="Edensor">
+                    <div class="card-body">
+                        <h5 class="card-title">Edensor</h5>
+                        <a href="pdf/edensor.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/karena_cinta.jpg" class="card-img-top" alt="Karena Cinta">
+                    <div class="card-body">
+                        <h5 class="card-title">Karena Cinta</h5>
+                        <a href="pdf/karena_cinta.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 5 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/mawar_merah_darah.jpg" class="card-img-top" alt="Mawar Merah Darah">
+                    <div class="card-body">
+                        <h5 class="card-title">Mawar Merah Darah</h5>
+                        <a href="pdf/mawar_merah_darah.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 6 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/kamu_berharga_seperti_kata.jpg" class="card-img-top" alt="Kamu Berharga Seperti Kata">
+                    <div class="card-body">
+                        <h5 class="card-title">Kamu Berharga Seperti Kata</h5>
+                        <a href="pdf/kamu_berharga_seperti_kata.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 7 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/animal_farm.jpg" class="card-img-top" alt="Animal Farm">
+                    <div class="card-body">
+                        <h5 class="card-title">Animal Farm</h5>
+                        <a href="pdf/animal_farm.pdf" class="btn btn-primary" target="_blank">Baca PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3 mt-4">
+        <p>&copy; 2025 Lista Oktavia Rambe. All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>
