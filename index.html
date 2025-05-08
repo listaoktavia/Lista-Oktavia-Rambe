@@ -11,6 +11,35 @@
             font-size: 1.2rem;
             font-weight: bold;
         }
+
+        .dark-mode {
+            background-color: #121212 !important;
+            color: #ffffff !important;
+        }
+
+        .dark-mode .navbar,
+        .dark-mode .bg-primary,
+        .dark-mode .bg-dark {
+            background-color: #1f1f1f !important;
+        }
+
+        .dark-mode .text-primary {
+            color: #90caf9 !important;
+        }
+
+        .dark-mode .bg-white {
+            background-color: #2c2c2c !important;
+        }
+
+        .dark-mode a {
+            color: #90caf9;
+        }
+
+        .mode-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
     </style>
 </head>
 <body class="bg-light">
@@ -18,8 +47,11 @@
         alert("Welcome to Perpustakaan Lista Oktavia");
     </script>
 
-    <header class="bg-primary text-white text-center py-4">
+    <header class="bg-primary text-white text-center py-4 position-relative">
         <h1>Perpustakaan Digital Lista</h1>
+        <div class="mode-toggle">
+            <button onclick="toggleMode()" class="btn btn-light btn-sm">🌙/☀️</button>
+        </div>
         <div id="clock" class="mt-2"></div> <!-- Jam Digital -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
             <div class="container">
@@ -33,7 +65,7 @@
                         <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="tabelperkalian.php">Tabel Perkalian</a></li>
                         <li class="nav-item"><a class="nav-link" href="formulirpengunjung.php">Formulir Pengunjung</a></li>
-                        <li class="nav-item"><a class="nav-link" href="koleksi.html">Koleksi Buku</a></li
+                        <li class="nav-item"><a class="nav-link" href="koleksi.html">Koleksi Buku</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,114 +86,97 @@
         <ul class="list-unstyled">
             <li><a href="https://lib.ub.ac.id/" target="_blank" class="btn btn-primary">Perpustakaan Brawijaya</a></li>
         </ul>
-</section>
+    </section>
 
-   <section class="bg-white rounded-lg shadow-md p-8 max-w-4xl mx-auto" id="events">
-    <h2 class="text-2xl font-bold text-blue-700 text-center">
-     Event di Perpustakaan Universitas Brawijaya
-    </h2>
-    <p class="mt-3 text-center text-gray-700">
-     Berikut beberapa event menarik yang diadakan oleh Perpustakaan Universitas Brawijaya:
-    </p>
-    <ul class="mt-6 space-y-6 text-gray-800">
-     <li class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition flex flex-col md:flex-row md:space-x-6">
-      <img alt="Brawijaya Book Fair 2025" class="w-full md:w-48 rounded-lg object-cover" height="120" src="https://lib.ub.ac.id/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-17-at-14.29.48-1536x1152.jpeg" width="300"/>
-      <div class="mt-4 md:mt-0 flex flex-col justify-between">
-       <div>
-        <div class="flex items-center space-x-3 text-xl">
-         <span>
-          📚
-         </span>
-         <strong class="text-blue-700">
-          Brawijaya Book Fair 2025
-         </strong>
-         <span class="ml-auto text-sm text-gray-500">
-          17–28 Februari 2025
-         </span>
-        </div>
-        <p class="mt-1 text-sm text-gray-600 leading-relaxed">
-         Diskon hingga 80% untuk berbagai koleksi buku berkualitas, mulai dari buku akademik, novel, hingga pengembangan diri. Lokasi: Gazebo Perpustakaan UB. Jam Operasional: 09.00 – 21.00 WIB.
+    <section class="bg-white rounded-lg shadow-md p-8 max-w-4xl mx-auto" id="events">
+        <h2 class="text-2xl font-bold text-blue-700 text-center">Event di Perpustakaan Universitas Brawijaya</h2>
+        <p class="mt-3 text-center text-gray-700">
+            Berikut beberapa event menarik yang diadakan oleh Perpustakaan Universitas Brawijaya:
         </p>
-       </div>
-       <a class="text-blue-700 font-semibold hover:underline mt-2 md:mt-4" href="https://lib.ub.ac.id/berita/pembukaan-brawijaya-book-fair-2025-surga-literasi-hadir-di-ub/" target="_blank">
-        Info Selengkapnya
-       </a>
-      </div>
-     </li>
-     <li class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition flex flex-col md:flex-row md:space-x-6">
-      <img alt="Pelatihan dasar NVivo di UB" class="w-full md:w-48 rounded-lg object-cover" height="120" src="https://lib.ub.ac.id/wp-content/uploads/2025/04/pelatihan-nvivo.jpg" width="300"/>
-      <div class="mt-4 md:mt-0 flex flex-col justify-between">
-       <div>
-        <div class="flex items-center space-x-3 text-xl">
-         <span>
-          🖥️
-         </span>
-         <strong class="text-blue-700">
-          Pelatihan Dasar NVivo
-         </strong>
-         <span class="ml-auto text-sm text-gray-500">
-          22 April 2025
-         </span>
-        </div>
-        <p class="mt-1 text-sm text-gray-600 leading-relaxed">
-         Pelatihan literasi akademik bertajuk “Pelatihan Dasar NVivo: Optimalisasi e-Resources untuk Penulisan Artikel Ilmiah”. Bertempat di Ruang Pertemuan 1, Gedung Perpustakaan UB Lantai 1, dimulai pukul 09.00 WIB.
-        </p>
-       </div>
-       <a class="text-blue-700 font-semibold hover:underline mt-2 md:mt-4" href="https://lib.ub.ac.id/berita/pelatihan-dasar-nvivo-perpustakaan-ub-dorong-pemanfaatan-e-resources-untuk-penulisan-artikel-ilmiah/" target="_blank">
-        Info Selengkapnya
-       </a>
-      </div>
-     </li>
-     <li class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition flex flex-col md:flex-row md:space-x-6">
-      <img alt="Foto Creative Book Fair 3" class="w-full md:w-48 rounded-lg object-cover" height="120" src="https://bpu.ub.ac.id/wp-content/uploads/2024/09/CreativeBookFair3-1-1.webp" width="300"/>
-      <div class="mt-4 md:mt-0 flex flex-col justify-between">
-       <div>
-        <div class="flex items-center space-x-3 text-xl">
-         <span>
-          🎤
-         </span>
-         <strong class="text-blue-700">
-          Creative Book Fair 3
-         </strong>
-         <span class="ml-auto text-sm text-gray-500">
-          17–27 September 2024
-         </span>
-        </div>
-        <p class="mt-1 text-sm text-gray-600 leading-relaxed">
-         Acara yang menghadirkan beragam penerbit dan komunitas literasi untuk memeriahkan dunia perbukuan di Indonesia. Lokasi: Gazebo Perpustakaan UB. Jam Operasional: 08.00 – 17.00 WIB.
-        </p>
-       </div>
-       <a class="text-blue-700 font-semibold hover:underline mt-2 md:mt-4" href="https://bpu.ub.ac.id/pembukaan-creative-book-fair-3-di-gazebo-perpustakaan-universitas-brawijaya/" target="_blank">
-        Info Selengkapnya
-       </a>
-      </div>
-     </li>
-     <li class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition flex flex-col md:flex-row md:space-x-6">
-      <img alt="Booktalk Bersama Boy Candra" class="w-full md:w-48 rounded-lg object-cover" height="120" src="https://lib.ub.ac.id/wp-content/uploads/2024/10/WhatsApp-Image-2024-10-11-at-09.02.57-1536x864.jpeg" width="300"/>
-      <div class="mt-4 md:mt-0 flex flex-col justify-between">
-       <div>
-        <div class="flex items-center space-x-3 text-xl">
-         <span>
-          📖
-         </span>
-         <strong class="text-blue-700">
-          Booktalk Bersama Boy Candra
-         </strong>
-         <span class="ml-auto text-sm text-gray-500">
-          April 2025
-         </span>
-        </div>
-        <p class="mt-1 text-sm text-gray-600 leading-relaxed">
-        Salah satu momen yang paling ditunggu-tunggu adalah sesi talk show bersama penulis best-seller, Boy Candra. Acara ini berlangsung pada hari Kamis, 10 Oktober 2024. 
-        </p>
-       </div>
-       <a class="text-blue-700 font-semibold hover:underline mt-2 md:mt-4" href="https://lib.ub.ac.id/berita/booktalk-bersama-boy-candra-di-acara-brawijaya-book-fair-2024/" target="_blank">
-        Info Selengkapnya
-       </a>
-      </div>
-</section>
+        <ul class="mt-6 space-y-6 text-gray-800">
+            <!-- Event 1 -->
+            <li class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition flex flex-col md:flex-row md:space-x-6">
+                <img alt="Brawijaya Book Fair 2025" class="w-full md:w-48 rounded-lg object-cover" height="120" src="https://lib.ub.ac.id/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-17-at-14.29.48-1536x1152.jpeg" width="300"/>
+                <div class="mt-4 md:mt-0 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 text-xl">
+                            <span>📚</span>
+                            <strong class="text-blue-700">Brawijaya Book Fair 2025</strong>
+                            <span class="ml-auto text-sm text-gray-500">17–28 Februari 2025</span>
+                        </div>
+                        <p class="mt-1 text-sm text-gray-600 leading-relaxed">
+                            Diskon hingga 80% untuk berbagai koleksi buku berkualitas. Lokasi: Gazebo Perpustakaan UB. Jam Operasional: 09.00 – 21.00 WIB.
+                        </p>
+                    </div>
+                    <a class="text-blue-700 font-semibold hover:underline mt-2 md:mt-4" href="https://lib.ub.ac.id/berita/pembukaan-brawijaya-book-fair-2025-surga-literasi-hadir-di-ub/" target="_blank">
+                        Info Selengkapnya
+                    </a>
+                </div>
+            </li>
+
+            <!-- Event 2 -->
+            <li class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition flex flex-col md:flex-row md:space-x-6">
+                <img alt="Pelatihan dasar NVivo di UB" class="w-full md:w-48 rounded-lg object-cover" height="120" src="https://lib.ub.ac.id/wp-content/uploads/2025/04/pelatihan-nvivo.jpg" width="300"/>
+                <div class="mt-4 md:mt-0 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 text-xl">
+                            <span>🖥️</span>
+                            <strong class="text-blue-700">Pelatihan Dasar NVivo</strong>
+                            <span class="ml-auto text-sm text-gray-500">22 April 2025</span>
+                        </div>
+                        <p class="mt-1 text-sm text-gray-600 leading-relaxed">
+                            Pelatihan literasi akademik bertajuk “Pelatihan Dasar NVivo: Optimalisasi e-Resources untuk Penulisan Artikel Ilmiah”.
+                        </p>
+                    </div>
+                    <a class="text-blue-700 font-semibold hover:underline mt-2 md:mt-4" href="https://lib.ub.ac.id/berita/pelatihan-dasar-nvivo-perpustakaan-ub-dorong-pemanfaatan-e-resources-untuk-penulisan-artikel-ilmiah/" target="_blank">
+                        Info Selengkapnya
+                    </a>
+                </div>
+            </li>
+
+            <!-- Event 3 -->
+            <li class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition flex flex-col md:flex-row md:space-x-6">
+                <img alt="Creative Book Fair 3" class="w-full md:w-48 rounded-lg object-cover" height="120" src="https://bpu.ub.ac.id/wp-content/uploads/2024/09/CreativeBookFair3-1-1.webp" width="300"/>
+                <div class="mt-4 md:mt-0 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 text-xl">
+                            <span>🎤</span>
+                            <strong class="text-blue-700">Creative Book Fair 3</strong>
+                            <span class="ml-auto text-sm text-gray-500">17–27 September 2024</span>
+                        </div>
+                        <p class="mt-1 text-sm text-gray-600 leading-relaxed">
+                            Acara yang menghadirkan beragam penerbit dan komunitas literasi untuk memeriahkan dunia perbukuan di Indonesia.
+                        </p>
+                    </div>
+                    <a class="text-blue-700 font-semibold hover:underline mt-2 md:mt-4" href="https://bpu.ub.ac.id/pembukaan-creative-book-fair-3-di-gazebo-perpustakaan-universitas-brawijaya/" target="_blank">
+                        Info Selengkapnya
+                    </a>
+                </div>
+            </li>
+
+            <!-- Event 4 -->
+            <li class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition flex flex-col md:flex-row md:space-x-6">
+                <img alt="Booktalk Bersama Boy Candra" class="w-full md:w-48 rounded-lg object-cover" height="120" src="https://lib.ub.ac.id/wp-content/uploads/2024/10/WhatsApp-Image-2024-10-11-at-09.02.57-1536x864.jpeg" width="300"/>
+                <div class="mt-4 md:mt-0 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-3 text-xl">
+                            <span>📖</span>
+                            <strong class="text-blue-700">Booktalk Bersama Boy Candra</strong>
+                            <span class="ml-auto text-sm text-gray-500">April 2025</span>
+                        </div>
+                        <p class="mt-1 text-sm text-gray-600 leading-relaxed">
+                            Talk show bersama penulis best-seller, Boy Candra. Diselenggarakan Kamis, 10 Oktober 2024.
+                        </p>
+                    </div>
+                    <a class="text-blue-700 font-semibold hover:underline mt-2 md:mt-4" href="https://lib.ub.ac.id/berita/booktalk-bersama-boy-candra-di-acara-brawijaya-book-fair-2024/" target="_blank">
+                        Info Selengkapnya
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
     
-  <div class="text-center py-3">
+    <div class="text-center py-3">
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP_UDnBTm9ucWSBBGKU8PS2XSf7JU0-pXMcwa_P-dF7oc-IWsfwWdRbKfqRyl8BLQ5AKqrO1TGxa-HhwvXz8gqJUyOIidWGd4vLaOB69C_WU82m7SXqbVuvLjKCaozQQie02j6d8F4SPm/s1600/gift+10.gif" class="img-fluid" alt="Gift Image">
     </div>
 
@@ -179,8 +194,20 @@
             document.getElementById('clock').textContent = "Waktu saat ini: " + formattedTime;
         }
 
-        setInterval(updateClock, 1000); // Perbarui setiap detik
-        updateClock(); // Jalankan saat halaman dimuat
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+
+        window.onload = function () {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        }
     </script>
 </body>
 </html>
+
