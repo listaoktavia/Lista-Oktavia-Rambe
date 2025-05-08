@@ -1,137 +1,61 @@
 <!DOCTYPE html>
 <html lang="id">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>Perpustakaan Digital Lista Oktavia</title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-            font-family: 'Inter', sans-serif;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital Lista Oktavia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #clock {
+            font-size: 1.2rem;
+            font-weight: bold;
         }
-  </style>
- </head>
- <body class="bg-gray-100 flex flex-col min-h-screen">
-  <script>
-   alert("Welcome to Perpustakaan Lista Oktavia");
-  </script>
-  <header class="bg-blue-700 text-white">
-   <div class="max-w-7xl mx-auto px-4 py-6 text-center">
-    <h1 class="text-3xl font-bold">
-     Perpustakaan Digital Lista
-    </h1>
-    <div class="mt-2 text-lg font-semibold" id="clock">
-    </div>
-   </div>
-   <nav class="bg-blue-900">
-    <div class="max-w-7xl mx-auto px-4">
-     <div class="flex items-center justify-between h-14">
-      <div class="flex items-center space-x-4">
-       <button aria-label="Toggle menu" class="text-white md:hidden focus:outline-none focus:ring-2 focus:ring-white" id="menu-btn">
-        <i class="fas fa-bars fa-lg">
-        </i>
-       </button>
-<div class="hidden md:flex justify-center w-full">
-       <ul class="hidden md:flex space-x-6 text-white font-semibold text-lg" id="menu">
-        <li>
-         <a class="hover:text-blue-300 transition" href="index.html">
-          Home
-         </a>
-        </li>
-        <li>
-         <a class="hover:text-blue-300 transition" href="aboutme.html">
-          About Me
-         </a>
-        </li>
-        <li>
-         <a class="hover:text-blue-300 transition" href="contactus.html">
-          Contact Us
-         </a>
-        </li>
-        <li>
-         <a class="hover:text-blue-300 transition" href="tabelperkalian.php">
-          Tabel Perkalian
-         </a>
-        </li>
-        <li>
-         <a class="hover:text-blue-300 transition" href="formulirpengunjung.php">
-          Formulir Pengunjung
-         </a>
-        </li>
-        <li>
-         <a class="hover:text-blue-300 transition" href="koleksi.html">
-          Koleksi Buku
-         </a>
-        </li>
-       </ul>
-      </div>
-     </div>
-     <div class="md:hidden hidden pb-4" id="mobile-menu">
-      <ul class="space-y-3 text-white font-semibold text-lg">
-       <li>
-        <a class="block px-2 py-1 hover:bg-blue-800 rounded" href="index.html">
-         Home
-        </a>
-       </li>
-       <li>
-        <a class="block px-2 py-1 hover:bg-blue-800 rounded" href="aboutme.html">
-         About Me
-        </a>
-       </li>
-       <li>
-        <a class="block px-2 py-1 hover:bg-blue-800 rounded" href="contactus.html">
-         Contact Us
-        </a>
-       </li>
-       <li>
-        <a class="block px-2 py-1 hover:bg-blue-800 rounded" href="tabelperkalian.php">
-         Tabel Perkalian
-        </a>
-       </li>
-       <li>
-        <a class="block px-2 py-1 hover:bg-blue-800 rounded" href="formulirpengunjung.php">
-         Formulir Pengunjung
-        </a>
-       </li>
-       <li>
-        <a class="block px-2 py-1 hover:bg-blue-800 rounded" href="koleksi.html">
-         Koleksi Buku
-        </a>
-       </li>
-      </ul>
-     </div>
-    </div>
-   </nav>
-  </header>
-  <main class="flex-grow max-w-7xl mx-auto px-4 py-8 space-y-12">
-   <section class="text-center" id="home">
-    <h2 class="text-3xl font-bold text-blue-700">
-     Selamat Datang di Perpustakaan Digital Lista Oktavia
-    </h2>
-   </section>
-   <section class="bg-white rounded-lg shadow-md p-8 max-w-3xl mx-auto text-center" id="about">
-    <h2 class="text-2xl font-bold text-blue-700">
-     Tentang Saya
-    </h2>
-    <p class="mt-4 text-gray-700 leading-relaxed">
-     Perkenalkan nama saya Lista Oktavia, mahasiswa dari Universitas Sumatera Utara, jurusan Perpustakaan dan Sains Informasi. Ini adalah perpustakaan pribadi untuk menemukan berbagai koleksi buku digital.
-    </p>
-   </section>
-   <section class="text-center max-w-md mx-auto" id="contact">
-    <h2 class="text-2xl font-bold text-blue-700">
-     Kerja Sama
-    </h2>
-    <ul class="mt-4">
-     <li>
-      <a class="inline-block bg-blue-700 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-800 transition" href="https://lib.ub.ac.id/" target="_blank">
-       Perpustakaan Brawijaya
-      </a>
-     </li>
-    </ul>
-   </section>
+    </style>
+</head>
+<body class="bg-light">
+    <script>
+        alert("Welcome to Perpustakaan Lista Oktavia");
+    </script>
+
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Perpustakaan Digital Lista</h1>
+        <div id="clock" class="mt-2"></div> <!-- Jam Digital -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutme.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tabelperkalian.php">Tabel Perkalian</a></li>
+                        <li class="nav-item"><a class="nav-link" href="formulirpengunjung.php">Formulir Pengunjung</a></li>
+                        <li class="nav-item"><a class="nav-link" href="koleksi.html">Koleksi Buku</a></li
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="container text-center py-5">
+        <h2 class="text-primary">Selamat Datang di Perpustakaan Digital Lista Oktavia</h2>
+    </section>
+
+    <section id="about" class="container bg-white text-center py-5 rounded shadow">
+        <h2 class="text-primary">Tentang Saya</h2>
+        <p class="mt-3">Perkenalkan nama saya Lista Oktavia, mahasiswa dari Universitas Sumatera Utara, jurusan Perpustakaan dan Sains Informasi. Ini adalah perpustakaan pribadi untuk menemukan berbagai koleksi buku digital.</p>
+    </section>
+
+    <section id="contact" class="container text-center py-5">
+        <h2 class="text-primary">Kerja Sama</h2>
+        <ul class="list-unstyled">
+            <li><a href="https://lib.ub.ac.id/" target="_blank" class="btn btn-primary">Perpustakaan Brawijaya</a></li>
+        </ul>
+</section>
+
    <section class="bg-white rounded-lg shadow-md p-8 max-w-4xl mx-auto" id="events">
     <h2 class="text-2xl font-bold text-blue-700 text-center">
      Event di Perpustakaan Universitas Brawijaya
@@ -247,15 +171,13 @@
   <div class="flex justify-center py-6">
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP_UDnBTm9ucWSBBGKU8PS2XSf7JU0-pXMcwa_P-dF7oc-IWsfwWdRbKfqRyl8BLQ5AKqrO1TGxa-HhwvXz8gqJUyOIidWGd4vLaOB69C_WU82m7SXqbVuvLjKCaozQQie02j6d8F4SPm/s1600/gift+10.gif" class="img-fluid" alt="Gift Image">
     </div>
-    
-  <footer class="bg-blue-700 text-white text-center py-4">
-   <p class="text-sm">
-    © 2025 Lista Oktavia Rambe. All Rights Reserved.
-   </p>
-  </footer>
 
-  <script>
-   function updateClock() {
+    <footer class="bg-primary text-white text-center py-3 mt-4">
+        <p>&copy; 2025 Lista Oktavia Rambe. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function updateClock() {
             const now = new Date();
             const hours = now.getHours().toString().padStart(2, '0');
             const minutes = now.getMinutes().toString().padStart(2, '0');
@@ -263,14 +185,9 @@
             const formattedTime = `${hours}:${minutes}:${seconds}`;
             document.getElementById('clock').textContent = "Waktu saat ini: " + formattedTime;
         }
-        setInterval(updateClock, 1000);
-        updateClock();
 
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-  </script>
- </body>
+        setInterval(updateClock, 1000); // Perbarui setiap detik
+        updateClock(); // Jalankan saat halaman dimuat
+    </script>
+</body>
 </html>
