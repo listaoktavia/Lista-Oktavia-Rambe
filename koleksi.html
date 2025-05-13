@@ -10,47 +10,42 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <style>
-      #clock {
-        font-size: 1.2rem;
-        font-weight: bold;
-      }
-      .dark-mode {
-        background-color: #a7f3d0 !important; /* mint green */
-        color: #fbcfe8 !important; /* baby pink text */
-      }
-      .dark-mode header {
-        background-color: #bfdbfe !important; /* baby blue */
-        color: #db2777 !important; /* darker pink for contrast */
-      }
-      .dark-mode nav {
-        background-color: #fbcfe8 !important; /* baby pink */
-      }
-      .dark-mode nav a {
-        color: #2563eb !important; /* blue for links */
-      }
-      .dark-mode nav a:hover {
-        color: #d946ef !important; /* pinkish hover */
-      }
-      .dark-mode section.bg-white {
-        background-color: #bfdbfe !important; /* baby blue */
-        color: #831843 !important; /* dark pink text */
-      }
-      .dark-mode footer {
-        background-color: #a7f3d0 !important; /* mint green */
-        color: #9d174d !important; /* dark pink */
-      }
-      .mode-toggle {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-      }
-    </style>
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
+    .dark-mode {
+      background-color: #a7f3d0 !important; /* mint green */
+      color: #fbcfe8 !important; /* baby pink text */
+    }
+    .dark-mode header {
+      background-color: #bfdbfe !important; /* baby blue */
+      color: #db2777 !important; /* darker pink for contrast */
+    }
+    .dark-mode nav {
+      background-color: #fbcfe8 !important; /* baby pink */
+    }
+    .dark-mode nav a {
+      color: #2563eb !important; /* blue for links */
+    }
+    .dark-mode nav a:hover {
+      color: #d946ef !important; /* pinkish hover */
+    }
+    .dark-mode table {
+      background-color: #bfdbfe !important; /* baby blue */
+      color: #831843 !important; /* dark pink text */
+    }
+    .dark-mode footer {
+      background-color: #a7f3d0 !important; /* mint green */
+      color: #9d174d !important; /* dark pink */
+    }
+    .mode-toggle {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+  </style>
 </head>
 <body class="bg-pink-100">
-  <script>
-    alert("Welcome to Perpustakaan Lista Oktavia");
-  </script>
-
   <header class="bg-pink-200 text-pink-800 text-center py-4 relative">
     <h1 class="text-3xl font-bold">Perpustakaan Digital Lista</h1>
     <div class="mode-toggle">
@@ -59,7 +54,7 @@
         class="bg-white text-pink-600 px-3 py-1 rounded shadow-sm hover:bg-pink-100 transition"
         aria-label="Toggle dark mode"
       >
-       🌙/☀️
+        🌙/☀️
       </button>
     </div>
     <nav class="bg-blue-200 mt-3" aria-label="Primary Navigation">
@@ -89,9 +84,10 @@
     </nav>
   </header>
 
-  <main class="container mx-auto my-10 max-w-xl bg-blue-100 rounded-lg shadow-md p-8 text-center text-pink-700">
-   <h2 class="text-3xl font-semibold mb-3 text-pink-600">Koleksi</h2>
-   <p class="mb-6">Koleksi buku.</p>
+  <main class="container mx-auto mt-5 p-6 bg-white rounded-lg shadow max-w-3xl">
+    <h2 class="text-center text-pink-600 text-2xl font-bold">Koleksi Buku</h2>
+    <table class="table-auto w-full mt-4 border border-pink-300 text-pink-800">
+
     <div class="bg-baby blue rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
     <img alt="Cover novel Laskar Pelangi with colorful illustration of children on a beach at sunset" class="w-full h-auto rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/c5ba8823-1e8a-4fe8-54e0-921fdd021e5f.jpg" width="150"/>
     <h3 class="mt-4 text-lg font-semibold text-gray-900 text-center">
@@ -186,7 +182,7 @@
     <img
       src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP_UDnBTm9ucWSBBGKU8PS2XSf7JU0-pXMcwa_P-dF7oc-IWsfwWdRbKfqRyl8BLQ5AKqrO1TGxa-HhwvXz8gqJUyOIidWGd4vLaOB69C_WU82m7SXqbVuvLjKCaozQQie02j6d8F4SPm/s1600/gift+10.gif"
       class="mx-auto max-w-xs"
-      alt="Animated gift box with pink and blue ribbons and sparkles"
+      alt="Animated gift panda"
     />
   </div>
 
