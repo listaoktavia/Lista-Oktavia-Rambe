@@ -14,34 +14,34 @@
       font-family: 'Nunito', sans-serif;
     }
     .dark-mode {
-      background-color: #a7f3d0 !important; /* mint green */
-      color: #fbcfe8 !important; /* baby pink text */
+        background-color: #1e293b !important; /* dark slate blue */
+        color: #f0f9ff !important; /* very light blue text */
     }
     .dark-mode header {
-      background-color: #bfdbfe !important; /* baby blue */
-      color: #db2777 !important; /* darker pink for contrast */
+        background-color: #334155 !important; /* slate gray */
+        color: #38bdf8 !important; /* sky blue for contrast */
     }
     .dark-mode nav {
-      background-color: #fbcfe8 !important; /* baby pink */
+        background-color: #0f172a !important; /* very dark blue */
     }
     .dark-mode nav a {
-      color: #2563eb !important; /* blue for links */
+        color: #60a5fa !important; /* light blue for links */
     }
     .dark-mode nav a:hover {
-      color: #d946ef !important; /* pinkish hover */
+        color: #3b82f6 !important; /* brighter blue hover */
     }
-    .dark-mode table {
-      background-color: #bfdbfe !important; /* baby blue */
-      color: #831843 !important; /* dark pink text */
+    .dark-mode main {
+        background-color: #475569 !important; /* medium slate gray */
+        color: #e0e7ff !important; /* light periwinkle text */
     }
     .dark-mode footer {
-      background-color: #a7f3d0 !important; /* mint green */
-      color: #9d174d !important; /* dark pink */
+        background-color: #1e293b !important; /* dark slate blue */
+        color: #93c5fd !important; /* light blue */
     }
     .mode-toggle {
-      position: absolute;
-      top: 10px;
-      right: 20px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
     }
   </style>
 </head>
@@ -65,7 +65,6 @@
           aria-expanded="false"
           aria-controls="navbarNav"
           aria-label="Toggle navigation menu"
-          onclick="document.getElementById('navbarNav').classList.toggle('hidden'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')"
         >
           <i class="fas fa-bars fa-lg"></i>
         </button>
@@ -85,104 +84,71 @@
   </header>
 
   <main class="container mx-auto mt-5 p-6 bg-white rounded-lg shadow max-w-3xl">
-    <h2 class="text-center text-pink-600 text-2xl font-bold">Koleksi Buku</h2>
-    <table class="table-auto w-full mt-4 border border-pink-300 text-pink-800">
+    <h2 class="text-center text-pink-600 text-2xl font-bold mb-6">Koleksi Buku</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-blue-100 rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
+        <img alt="Cover novel Laskar Pelangi with colorful illustration of children on a beach at sunset" class="w-36 h-auto rounded-md" src="https://storage.googleapis.com/a1aa/image/c5ba8823-1e8a-4fe8-54e0-921fdd021e5f.jpg" />
+        <h3 class="mt-4 text-lg font-semibold text-pink-800 text-center">Laskar Pelangi</h3>
+        <a href="https://archive.org/download/AndreaHirataLaskarPelangi_201805/Andrea%20Hirata%20-%20Laskar%20Pelangi.pdf" target="_blank" class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition">
+          Baca PDF <i class="fas fa-file-pdf ml-2"></i>
+        </a>
+      </div>
+      <div class="bg-blue-100 rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
+        <img alt="Cover novel The Jungle Book with jungle animals and a boy in the forest" class="w-36 h-auto rounded-md" src="https://storage.googleapis.com/a1aa/image/aeba3ab7-6dd8-462d-5f07-eeffbc5135c4.jpg" />
+        <h3 class="mt-4 text-lg font-semibold text-pink-800 text-center">The Jungle Book</h3>
+        <a href="https://archive.org/download/the-jungle-book-rudyard-kipling/The%20Jungle%20Book_Rudyard%20Kipling.pdf" target="_blank" class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition">
+          Baca PDF <i class="fas fa-file-pdf ml-2"></i>
+        </a>
+      </div>
+      <div class="bg-blue-100 rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
+        <img alt="Cover novel The Call of the Wild featuring a wolf in snowy wilderness" class="w-36 h-auto rounded-md" src="https://storage.googleapis.com/a1aa/image/8a7e2d6c-a6a8-40f7-de83-e543082a6182.jpg" />
+        <h3 class="mt-4 text-lg font-semibold text-pink-800 text-center">The Call of the Wild</h3>
+        <a href="https://archive.org/download/callofwild0000jack/callofwild0000jack.pdf" target="_blank" class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition">
+          Baca PDF <i class="fas fa-file-pdf ml-2"></i>
+        </a>
+      </div>
+      <div class="bg-blue-100 rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
+        <img alt="Cover novel The Scarlet Letter with a woman in colonial dress holding a red letter A" class="w-36 h-auto rounded-md" src="https://storage.googleapis.com/a1aa/image/3bdf3fd7-0334-44d2-a3cf-471b536612f6.jpg" />
+        <h3 class="mt-4 text-lg font-semibold text-pink-800 text-center">The Scarlet Letter</h3>
+        <a href="https://ia902300.us.archive.org/23/items/books_202205/the-scarlet-letter.pdf" target="_blank" class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition">
+          Baca PDF <i class="fas fa-file-pdf ml-2"></i>
+        </a>
+      </div>
+      <div class="bg-blue-100 rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
+        <img alt="Cover novel The Ministry of Time with a clock and time travel theme" class="w-36 h-auto rounded-md" src="https://storage.googleapis.com/a1aa/image/df5032c3-181a-43cd-0302-c04f9398dece.jpg" />
+        <h3 class="mt-4 text-lg font-semibold text-pink-800 text-center">The Ministry of Time</h3>
+        <a href="https://archive.org/download/the-ministry-of-time-kaliane-bradley/The%20Ministry%20of%20Time%20%28Kaliane%20Bradley%29.pdf" target="_blank" class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition">
+          Baca PDF <i class="fas fa-file-pdf ml-2"></i>
+        </a>
+      </div>
+      <div class="bg-blue-100 rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
+        <img alt="Cover book Algoritma dan Pemrograman Java with programming code and Java logo" class="w-36 h-auto rounded-md" src="https://storage.googleapis.com/a1aa/image/7d18c64a-467f-4c4e-5325-4cfec2bed6e3.jpg" />
+        <h3 class="mt-4 text-lg font-semibold text-pink-800 text-center">Algoritma dan Pemrograman Java</h3>
+        <a href="https://press.poliban.ac.id/uploads/file/Buku_Algo_Pemrog_Java_9786237694458.pdf" target="_blank" class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition">
+          Baca PDF <i class="fas fa-file-pdf ml-2"></i>
+        </a>
+      </div>
+      <div class="bg-blue-100 rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
+        <img alt="Cover novel Moby Dick with a giant white whale and a small boat in the ocean" class="w-36 h-auto rounded-md" src="https://storage.googleapis.com/a1aa/image/532c2b83-4b34-4306-b763-30a27651bddf.jpg" />
+        <h3 class="mt-4 text-lg font-semibold text-pink-800 text-center">Moby Dick</h3>
+        <a href="https://ia800101.us.archive.org/8/items/collected-novels/moby-dick.pdf" target="_blank" class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition">
+          Baca PDF <i class="fas fa-file-pdf ml-2"></i>
+        </a>
+      </div>
+      <div class="bg-blue-100 rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
+        <img alt="Cover novel Huckleberry Finn with a boy on a raft floating down a river" class="w-36 h-auto rounded-md" src="https://storage.googleapis.com/a1aa/image/f7063220-7a2e-43db-cb8d-7cce2e8d14c7.jpg" />
+        <h3 class="mt-4 text-lg font-semibold text-pink-800 text-center">Huckleberry Finn</h3>
+        <a href="https://archive.org/download/mark-twain_the-adventures-of-huckleberry-finn/mark-twain_the-adventures-of-huckleberry-finn.pdf" target="_blank" class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition">
+          Baca PDF <i class="fas fa-file-pdf ml-2"></i>
+        </a>
+      </div>
+    </div>
 
-    <div class="bg-baby blue rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
-    <img alt="Cover novel Laskar Pelangi with colorful illustration of children on a beach at sunset" class="w-full h-auto rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/c5ba8823-1e8a-4fe8-54e0-921fdd021e5f.jpg" width="150"/>
-    <h3 class="mt-4 text-lg font-semibold text-gray-900 text-center">
-     Laskar Pelangi
-    </h3>
-    <a class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition" href="https://archive.org/download/AndreaHirataLaskarPelangi_201805/Andrea%20Hirata%20-%20Laskar%20Pelangi.pdf" target="_blank">
-     Baca PDF
-     <i class="fas fa-file-pdf ml-2">
-     </i>
-    </a>
-   </div>
-   <div class="bg-baby blue rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
-    <img alt="Cover novel The Jungle Book with jungle animals and a boy in the forest" class="w-full h-auto rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/aeba3ab7-6dd8-462d-5f07-eeffbc5135c4.jpg" width="150"/>
-    <h3 class="mt-4 text-lg font-semibold text-gray-900 text-center">
-     The Jungle Book
-    </h3>
-    <a class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition" href="https://archive.org/download/the-jungle-book-rudyard-kipling/The%20Jungle%20Book_Rudyard%20Kipling.pdf" target="_blank">
-     Baca PDF
-     <i class="fas fa-file-pdf ml-2">
-     </i>
-    </a>
-   </div>
-   <div class="bg-baby blue rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
-    <img alt="Cover novel The Call of the Wild featuring a wolf in snowy wilderness" class="w-full h-auto rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/8a7e2d6c-a6a8-40f7-de83-e543082a6182.jpg" width="150"/>
-    <h3 class="mt-4 text-lg font-semibold text-gray-900 text-center">
-     The Call of the Wild
-    </h3>
-    <a class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition" href="https://archive.org/download/callofwild0000jack/callofwild0000jack.pdf" target="_blank">
-     Baca PDF
-     <i class="fas fa-file-pdf ml-2">
-     </i>
-    </a>
-   </div>
-   <div class="bg-baby blue rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
-    <img alt="Cover novel The Scarlet Letter with a woman in colonial dress holding a red letter A" class="w-full h-auto rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/3bdf3fd7-0334-44d2-a3cf-471b536612f6.jpg" width="150"/>
-    <h3 class="mt-4 text-lg font-semibold text-gray-900 text-center">
-     The Scarlet Letter
-    </h3>
-    <a class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition" href="https://ia902300.us.archive.org/23/items/books_202205/the-scarlet-letter.pdf" target="_blank">
-     Baca PDF
-     <i class="fas fa-file-pdf ml-2">
-     </i>
-    </a>
-   </div>
-   <div class="bg-baby blue rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
-    <img alt="Cover novel The Ministry of Time with a clock and time travel theme" class="w-full h-auto rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/df5032c3-181a-43cd-0302-c04f9398dece.jpg" width="150"/>
-    <h3 class="mt-4 text-lg font-semibold text-gray-900 text-center">
-     The Ministry of Time
-    </h3>
-    <a class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition" href="https://archive.org/download/the-ministry-of-time-kaliane-bradley/The%20Ministry%20of%20Time%20%28Kaliane%20Bradley%29.pdf" target="_blank">
-     Baca PDF
-     <i class="fas fa-file-pdf ml-2">
-     </i>
-    </a>
-   </div>
-      
-   <div class="bg-baby blue rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
-    <img alt="Cover book Algoritma dan Pemrograman Java with programming code and Java logo" class="w-full h-auto rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/7d18c64a-467f-4c4e-5325-4cfec2bed6e3.jpg" width="150"/>
-    <h3 class="mt-4 text-lg font-semibold text-gray-900 text-center">
-     Algoritma dan Pemrograman Java
-    </h3>
-    <a class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition" href="https://press.poliban.ac.id/uploads/file/Buku_Algo_Pemrog_Java_9786237694458.pdf" target="_blank">
-     Baca PDF
-     <i class="fas fa-file-pdf ml-2">
-     </i>
-    </a>
-   </div>
-   <div class="bg-baby blue rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
-    <img alt="Cover novel Moby Dick with a giant white whale and a small boat in the ocean" class="w-full h-auto rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/532c2b83-4b34-4306-b763-30a27651bddf.jpg" width="150"/>
-    <h3 class="mt-4 text-lg font-semibold text-gray-900 text-center">
-     Moby Dick
-    </h3>
-    <a class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition" href="https://ia800101.us.archive.org/8/items/collected-novels/moby-dick.pdf" target="_blank">
-     Baca PDF
-     <i class="fas fa-file-pdf ml-2">
-     </i>
-    </a>
-   </div>
-   <div class="bg-baby blue rounded-xl shadow-md overflow-hidden flex flex-col items-center p-5">
-    <img alt="Cover novel Huckleberry Finn with a boy on a raft floating down a river" class="w-full h-auto rounded-md" height="200" src="https://storage.googleapis.com/a1aa/image/f7063220-7a2e-43db-cb8d-7cce2e8d14c7.jpg" width="150"/>
-    <h3 class="mt-4 text-lg font-semibold text-gray-900 text-center">
-     Huckleberry Finn
-    </h3>
-    <a class="mt-3 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition" href="https://archive.org/download/mark-twain_the-adventures-of-huckleberry-finn/mark-twain_the-adventures-of-huckleberry-finn.pdf" target="_blank">
-     Baca PDF
-     <i class="fas fa-file-pdf ml-2">
-     </i>
-    </a>
-   </div>
-  
   <div class="text-center py-3">
     <img
       src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP_UDnBTm9ucWSBBGKU8PS2XSf7JU0-pXMcwa_P-dF7oc-IWsfwWdRbKfqRyl8BLQ5AKqrO1TGxa-HhwvXz8gqJUyOIidWGd4vLaOB69C_WU82m7SXqbVuvLjKCaozQQie02j6d8F4SPm/s1600/gift+10.gif"
       class="mx-auto max-w-xs"
-      alt="Animated gift panda"
+      alt="Animated gift panda with pink and blue ribbons and sparkles"
     />
   </div>
 
