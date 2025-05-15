@@ -15,35 +15,35 @@
       font-family: 'Nunito', sans-serif;
     }
     .dark-mode {
-      background-color: #a7f3d0 !important; /* mint green */
-      color: #fbcfe8 !important; /* baby pink text */
-    }
-    .dark-mode header {
-      background-color: #bfdbfe !important; /* baby blue */
-      color: #db2777 !important; /* darker pink for contrast */
-    }
-    .dark-mode nav {
-      background-color: #fbcfe8 !important; /* baby pink */
-    }
-    .dark-mode nav a {
-      color: #2563eb !important; /* blue for links */
-    }
-    .dark-mode nav a:hover {
-      color: #d946ef !important; /* pinkish hover */
-    }
-    .dark-mode table {
-      background-color: #bfdbfe !important; /* baby blue */
-      color: #831843 !important; /* dark pink text */
-    }
-    .dark-mode footer {
-      background-color: #a7f3d0 !important; /* mint green */
-      color: #9d174d !important; /* dark pink */
-    }
-    .mode-toggle {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-    }
+        background-color: #1e293b !important; /* dark slate blue */
+        color: #f0f9ff !important; /* very light blue text */
+      }
+      .dark-mode header {
+        background-color: #334155 !important; /* slate gray */
+        color: #38bdf8 !important; /* sky blue for contrast */
+      }
+      .dark-mode nav {
+        background-color: #0f172a !important; /* very dark blue */
+      }
+      .dark-mode nav a {
+        color: #60a5fa !important; /* light blue for links */
+      }
+      .dark-mode nav a:hover {
+        color: #3b82f6 !important; /* brighter blue hover */
+      }
+      .dark-mode section.bg-white {
+        background-color: #475569 !important; /* medium slate gray */
+        color: #e0e7ff !important; /* light periwinkle text */
+      }
+      .dark-mode footer {
+        background-color: #1e293b !important; /* dark slate blue */
+        color: #93c5fd !important; /* light blue */
+      }
+      .mode-toggle {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
   </style>
 </head>
 <body class="bg-pink-100">
@@ -112,7 +112,7 @@
         <tr class="border-b border-pink-300">
           <th class="text-left px-4 py-2">LinkedIn</th>
           <td class="px-4 py-2">
-            <a href="https://www.linkedin.com/in/listaoktavia" target="_blank" class="text-pink-600 hover:underline">listaoktavia</a>
+            <a href="https://www.linkedin.com/in/listaoktavia" target="_blank" class="text-pink-600 hover:underline">linkedin.com/in/listaoktavia</a>
           </td>
         </tr>
         <tr class="border-b border-pink-300">
@@ -134,7 +134,7 @@
   <div class="text-center py-3">
     <img
       src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNP_UDnBTm9ucWSBBGKU8PS2XSf7JU0-pXMcwa_P-dF7oc-IWsfwWdRbKfqRyl8BLQ5AKqrO1TGxa-HhwvXz8gqJUyOIidWGd4vLaOB69C_WU82m7SXqbVuvLjKCaozQQie02j6d8F4SPm/s1600/gift+10.gif"
-      alt="Animated gift panda"
+      alt="Animated gift box with pink and blue ribbons and sparkles"
       class="mx-auto max-w-xs"
     />
   </div>
@@ -143,18 +143,7 @@
     <p>© 2025 Lista Oktavia Rambe. All Rights Reserved.</p>
   </footer>
 
- <script>
-    function updateClock() {
-      const now = new Date();
-      const hours = now.getHours().toString().padStart(2, "0");
-      const minutes = now.getMinutes().toString().padStart(2, "0");
-      const seconds = now.getSeconds().toString().padStart(2, "0");
-      const formattedTime = `${hours}:${minutes}:${seconds}`;
-      document.getElementById("clock").textContent = "Waktu saat ini: " + formattedTime;
-    }
-    setInterval(updateClock, 1000);
-    updateClock();
-
+  <script>
     function toggleMode() {
       document.body.classList.toggle("dark-mode");
       localStorage.setItem(
@@ -166,14 +155,6 @@
       if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark-mode");
       }
-      // Nav toggle for mobile
-      const navToggle = document.getElementById("nav-toggle");
-      const navbarNav = document.getElementById("navbarNav");
-      navToggle.addEventListener("click", () => {
-        const expanded = navToggle.getAttribute("aria-expanded") === "true";
-        navToggle.setAttribute("aria-expanded", !expanded);
-        navbarNav.classList.toggle("hidden");
-      });
     };
   </script>
 </body>
