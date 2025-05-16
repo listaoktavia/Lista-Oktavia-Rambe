@@ -252,8 +252,8 @@
       </li>
     </ul>
   </section>
-    
-<!-- Cookie Consent Banner -->
+
+  <!-- Cookie Consent Banner -->
   <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 flex flex-col md:flex-row justify-between items-center z-50 hidden">
     <p class="text-sm mb-2 md:mb-0">
       Website ini menggunakan cookies untuk meningkatkan pengalaman pengguna dan keamanan data.
@@ -305,6 +305,7 @@
     function updateClock() {
       const now = new Date();
       const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute:'2-digit', second:'2-digit' };
+      const clock = document.getElementById('clock');
       clock.textContent = now.toLocaleDateString('id-ID', options);
     }
     setInterval(updateClock, 1000);
@@ -330,6 +331,10 @@
         navToggle.setAttribute("aria-expanded", !expanded);
         navbarNav.classList.toggle("hidden");
       });
+
+      if (!hasAcceptedCookies()) {
+        document.getElementById('cookie-banner').classList.remove('hidden');
+      }
     };
   </script>
 </body>
