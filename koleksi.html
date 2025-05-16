@@ -9,8 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
+    <style>
     body {
       font-family: 'Nunito', sans-serif;
     }
@@ -66,8 +65,7 @@
           aria-expanded="false"
           aria-controls="navbarNav"
           aria-label="Toggle navigation menu"
-        onclick="document.getElementById('navbarNav').classList.toggle('hidden'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true')"
-
+        >
           <i class="fas fa-bars fa-lg"></i>
         </button>
         <ul
@@ -159,6 +157,17 @@
   </footer>
 
   <script>
+    function updateClock() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, "0");
+      const minutes = now.getMinutes().toString().padStart(2, "0");
+      const seconds = now.getSeconds().toString().padStart(2, "0");
+      const formattedTime = `${hours}:${minutes}:${seconds}`;
+      document.getElementById("clock").textContent = "Waktu saat ini: " + formattedTime;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
     function toggleMode() {
       document.body.classList.toggle("dark-mode");
       localStorage.setItem(
@@ -171,6 +180,7 @@
       if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark-mode");
       }
+      // Nav toggle for mobile
       const navToggle = document.getElementById("nav-toggle");
       const navbarNav = document.getElementById("navbarNav");
       navToggle.addEventListener("click", () => {
